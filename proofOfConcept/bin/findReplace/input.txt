@@ -1,0 +1,924 @@
+5
+10
+5
+10
+20
+15
+10
+50
+120
+75
+500
+600
+1200
+-----
+15
+30
+80
+20
+80
+180
+60
+500
+1200
+1000
+5000
+5000
+7500
+-----
+35
+0
+80
+0
+0
+180
+0
+5000
+3000
+500
+9000
+25000
+2000
+-----
+10
+0
+30
+0
+0
+100
+0
+1200
+600
+800
+8000
+5000
+6000
+-----
+10
+15
+0
+0
+40
+0
+0
+200
+300
+150
+600
+1500
+1500
+-----
+30
+0
+50
+0
+0
+80
+0
+500
+400
+800
+3000
+3000
+3500
+-----
+20
+0
+30
+0
+0
+80
+0
+200
+500
+400
+8000
+8000
+15000
+-----
+15
+0
+15
+0
+0
+30
+0
+150
+250
+200
+1500
+1200
+1000
+-----
+40
+0
+25
+0
+0
+35
+0
+250
+0
+0
+3000
+0
+0
+-----
+50
+0
+80
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+-----
+15
+40
+30
+15
+100
+90
+35
+375
+0
+0
+8000
+0
+0
+-----
+500
+750
+2500
+300
+2500
+1800
+1200
+10000
+6000
+0
+75000
+40000
+0
+-----
+20
+20
+35
+0
+40
+80
+0
+200
+0
+0
+2500
+0
+0
+-----
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+-----
+"Plasmatron"
+"Lightning Rod"
+"Farm"
+"Cryo Chamber"
+"Ship"
+"Sniper"
+"Mage Tower"
+"Cannon"
+"Nuke Launcher"
+"Military Base"
+"Drone"
+"Flamethrower"
+"Sprayer"
+"Trapper"
+-----
+"Plasmatron"
+"LightningRod"
+"Farm"
+"Ice"
+"Ship"
+"Sniper"
+"Wizard"
+"Cannon"
+"NukeLauncher"
+"MilitaryBase"
+"Drone"
+"Flamethrower"
+"Sprayer"
+"Trapper"
+-----
+"Faster Firing"
+"More Propulsion"
+"Longer Range"
+"Engine Pump"
+"Advanced Sensors"
+"Even Longer Range"
+"Machine Gun"
+"Heavy Bullets"
+"Laser Pulse"
+"Railgun"
+"Explosions"
+"Ray of Doom"
+-----
+"Faster Shocks"
+"Jumping Spark"
+"Electroception"
+"Copper Wires"
+"Leaping Current"
+"Larger Range"
+"Higher Voltage"
+"Energy Sphere"
+"Charging"
+"Tesla Coil"
+"Doom Sphere"
+"Laser Ray"
+-----
+""
+"More Produce"
+""
+""
+"Fertilizer"
+""
+"Magic Food"
+"Monopoly"
+"Investments"
+"Vitamins"
+"Factory"
+"Money Boom"
+-----
+""
+"Enhanced Frost"
+""
+""
+"More Coolant"
+""
+"Wind Chill"
+"Snap Freeze"
+"Snow Cannon"
+"Absolute Zero"
+"Sharp Shards"
+"Avalanche"
+-----
+"Faster Firing"
+""
+""
+"Machine Gun"
+""
+""
+"Destroyer"
+"Triple Shot"
+"Merchant Ship"
+"Battleship"
+"Bombs"
+"Trade Colonies"
+-----
+""
+"More Damage"
+""
+""
+"Faster Reload"
+""
+"Powerful Shots"
+"AM Cripple"
+"SM Rifle"
+"Precision"
+"AM Incapacitate"
+"Auto Rifle"
+-----
+""
+"Concentrated Bolts"
+""
+""
+"Explosive Bolts"
+""
+"Wind Altar"
+"Fire Altar"
+"Arcane Altar"
+"Tornado Master"
+"Dragon Master"
+"Archmage Tower"
+-----
+""
+"Longer Range"
+""
+""
+"Faster Fire"
+""
+"Bigger Bombs"
+"AM Destroyer"
+"Larger Blasts"
+"Lava Bombs"
+"AM Obliterator"
+"Powerful Impact"
+-----
+""
+"Faster Fire"
+""
+""
+"Larger Nukes"
+""
+"Rockets!"
+""
+""
+"Rocket Launcher"
+""
+""
+-----
+""
+"Radar"
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+-----
+"Faster Shooting"
+"Larger Volleys"
+"Jet Engines"
+"Super Fast Firing"
+"Mega Volleys"
+"Radar"
+"Missiles"
+""
+""
+"Flying Fortress"
+""
+""
+-----
+"Plasma Blasts"
+"Propane"
+"Longer Range"
+"Pressure"
+"Radar Scanner"
+"Advanced Sensors"
+"Ion Cannon"
+"Solar Flare"
+""
+"Antimatter"
+"Fusion"
+""
+-----
+"Faster Firing"
+"Larger Spray"
+""
+"Even Faster Firing"
+"Super Large Spray"
+""
+"Charge"
+""
+""
+"Ion Motor"
+""
+""
+-----
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+-----
+"Shoots faster."
+""
+---
+"Shoots faster bullets"
+""
+---
+"Increases the range."
+""
+---
+"Shoots even faster."
+""
+---
+"Allows the plasmatron to"
+"detect camo aliens."
+---
+"Increases the range"
+"even more"
+---
+"Shoots twice as fast!"
+""
+---
+"Increases bullet damage."
+""
+---
+"Shoots a laser ray."
+""
+---
+"Shoots incredibly fast."
+""
+---
+"Bullets explode on impact."
+""
+---
+"Shoots a devastating"
+"ray of doom."
+-----
+"Shocks aliens faster."
+""
+---
+"Allows the electricity"
+"to jump a short gap."
+---
+"Allows the lightning rod to"
+"detect camo aliens."
+---
+"Shocks aliens even"
+"faster."
+---
+"Can jump two gaps."
+""
+---
+"Increases the range."
+""
+---
+"More damage!"
+""
+---
+"Creates a sphere"
+"that does damage."
+---
+"Charges up to attack."
+"Does more damage to AMs."
+---
+"Does tons of damage."
+""
+---
+"Does tons of damage!"
+""
+---
+"Does even more damage."
+""
+---
+-----
+""
+""
+-----
+"Produces more money"
+"per round."
+-----
+""
+""
+-----
+""
+""
+-----
+"Produces even more"
+"money."
+-----
+""
+""
+-----
+"Produces lives"
+"instead of money."
+-----
+"Produces tons of"
+"money."
+-----
+"Generates passive"
+"income."
+-----
+"Produces even more"
+"lives."
+-----
+"Produces a huge"
+"amount of money."
+-----
+"Produces more"
+"money per second."
+-----
+-----
+""
+""
+-----
+"Increases the range."
+""
+-----
+""
+""
+-----
+""
+""
+-----
+"Freezes Aliens for"
+"longer."
+-----
+""
+""
+-----
+"Freezes Aliens for"
+"even longer."
+-----
+"Does damage when"
+"aliens freeze."
+-----
+"Shoots snowballs!"
+""
+-----
+"Stops them almost"
+"indefinitely."
+-----
+"Does even more"
+"damage."
+-----
+"Shoots incredibly"
+"fast!"
+-----
+-----
+"Shoots faster."
+""
+-----
+""
+""
+-----
+""
+""
+-----
+"Shoots even faster!"
+""
+-----
+""
+""
+-----
+""
+""
+-----
+"Shoots incredibly fast!"
+""
+-----
+"Shoots three bullets"
+"instead of one!"
+-----
+"Earns 20 dollars per"
+"round from trading"
+-----
+"Shoots extremely fast!"
+""
+-----
+"Shoots bombs as"
+"well as bullets."
+-----
+"Earns 250 dollars per"
+"round from trading"
+-----
+-----
+""
+""
+-----
+"Does 4 damage"
+"instead of 2."
+-----
+""
+""
+-----
+""
+""
+-----
+"Shoots faster."
+""
+-----
+""
+""
+-----
+"Does even more damage!"
+""
+-----
+"Temporarily paralyzes"
+"Alien Motherships."
+-----
+"Shoots three times"
+"as fast!"
+-----
+"Does tons of damage!"
+""
+-----
+"Stops AMs even longer"
+"and does more damage."
+-----
+"Shoots extremely fast!"
+""
+-----
+-----
+""
+""
+-----
+"Bolts do more damage."
+""
+-----
+""
+""
+-----
+""
+""
+-----
+"Bolts explode on impact."
+""
+-----
+""
+""
+-----
+"Bolts blow aliens back."
+""
+-----
+"Shoots fire instead"
+"of bolts."
+-----
+"Bolts do even more"
+"damage."
+-----
+"Shoots whirlwinds"
+"that blow AMs back."
+-----
+"Obtains a ring of fire."
+""
+-----
+"Bolts do more damage"
+"and even more to AMs."
+-----
+-----
+""
+""
+-----
+"Has longer range."
+""
+-----
+""
+""
+-----
+""
+""
+-----
+"Fires bombs faster."
+""
+-----
+""
+""
+-----
+"Bombs do more damage."
+""
+-----
+"Does more damage to"
+"AMs"
+-----
+"Bombs have larger splash."
+""
+-----
+"Aliens hit by bombs"
+"take damage over time."
+-----
+"Does tons of damage"
+"to AMs."
+-----
+"Bombs stun aliens."
+""
+-----
+-----
+""
+""
+-----
+"Fires nukes faster."
+""
+-----
+""
+""
+-----
+""
+""
+-----
+"Nukes have a larger"
+"explosion."
+-----
+""
+""
+-----
+"Rockets are faster"
+"and more accurate."
+-----
+""
+""
+-----
+""
+""
+-----
+"Pure Annihilation."
+""
+-----
+"Solar Fusion"
+""
+-----
+""
+""
+-----
+-----
+""
+""
+-----
+"Allows other turrets"
+" to hit camo aliens."
+-----
+""
+""
+-----
+""
+""
+-----
+""
+""
+-----
+""
+""
+-----
+""
+""
+-----
+""
+""
+-----
+""
+""
+-----
+""
+""
+-----
+""
+""
+-----
+""
+""
+-----
+-----
+"Shoots faster."
+""
+-----
+"Shoots 12 bullets"
+"instead of 8."
+-----
+"Flies faster."
+""
+-----
+"Shoots even faster."
+""
+-----
+"Shoots 16 bullets"
+"instead of 12."
+-----
+"Allows the drone to"
+"detect camo aliens."
+-----
+"Shoots missiles as well"
+"as bullets."
+-----
+""
+""
+-----
+""
+""
+-----
+"Shoots missiles super"
+"fast!"
+-----
+""
+""
+-----
+""
+""
+-----
+-----
+"Plasma burns aliens."
+""
+-----
+"Shoots twice as fast!"
+""
+-----
+"Increases the range."
+""
+-----
+"High pressure"
+"plasma melts aliens."
+-----
+"Allows the flamethrower to"
+"detect camo aliens."
+-----
+"Has even more range!"
+""
+-----
+"Obliterates Aliens."
+""
+-----
+"Vaporizes aliens with"
+"sweeping flames."
+-----
+""
+""
+-----
+"Total annihilation."
+""
+-----
+"Harnesses the Sun."
+""
+-----
+""
+""
+-----
+-----
+"Shoots faster."
+""
+-----
+"Shoots more bullets"
+"in a shot."
+-----
+""
+""
+-----
+"Shoots even faster."
+""
+-----
+"Shoots nine bullets"
+"in a shot!"
+-----
+""
+""
+-----
+"Shoots faster as the"
+"round progresses."
+-----
+""
+""
+-----
+""
+""
+-----
+"Shoots super fast!"
+""
+-----
+""
+""
+-----
+""
+""
+-----
+-----
+""
+""
+-----
+"Allows other turrets"
+" to hit camo aliens."
+-----
+""
+""
+-----
+""
+""
+-----
+""
+""
+-----
+""
+""
+-----
+""
+""
+-----
+""
+""
+-----
+""
+""
+-----
+""
+""
+-----
+""
+""
+-----
+""
+""
+-----
