@@ -114,7 +114,6 @@ public class Iostream
 		if (openO)
 		{
 			pw.write(s);
-			System.out.print(s);
 		}
 	}
 

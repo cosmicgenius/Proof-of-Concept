@@ -8,9 +8,9 @@ import main.Util;
 public class Draw {
 
 	static ArrayList<Boid> boids = new ArrayList<>();
-	static ArrayList<Obstacle> obstacles = new ArrayList<>();
-	
-	public static void main(String args[]) {
+  static ArrayList<Obstacle> obstacles = new ArrayList<>();
+  
+  public static void main(String args[]) {
 		App.construct(800, 800, "Boids");
 		
 		for (int i = 50; i <= 800 - 50; i += 50) {

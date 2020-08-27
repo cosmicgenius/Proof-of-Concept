@@ -11,8 +11,10 @@ public class Matrix {
 	 * Creates a matrix filled with a certain value
 	 */
 	public Matrix(double fill, int length, int width) throws MatrixException {
-		if (length == 0 || width == 0)
-			throw new MatrixException("Cannot have size 0.");
+		if (length == 0)
+			throw new MatrixException("Cannot have a matrix with length 0.");
+		if (width == 0)
+			throw new MatrixException("Cannot have a matrix with width 0.");
 
 		matrix = new double[length][width];
 
@@ -25,11 +27,21 @@ public class Matrix {
 	 * Creates a blank matrix (all zeroes)
 	 */
 	public Matrix(int length, int width) throws MatrixException {
-		if (length == 0 || width == 0)
-			throw new MatrixException("Cannot have size 0.");
+		if (length == 0)
+			throw new MatrixException("Cannot have a matrix with length 0.");
+		if (width == 0)
+			throw new MatrixException("Cannot have a matrix with width 0.");
 
 		matrix = new double[length][width];
 	}
+	
+	/**
+	 * Creates a new matrix given a normal java matrix (2d array)
+	 */
+	public Matrix(double[][] matrix) throws MatrixException {
+		this.matrix = matrix;
+	}
+
 
 	/**
 	 * Copies the matrix
@@ -84,9 +96,11 @@ public class Matrix {
 	/**
 	 * Returns this + rhs
 	 */
-	public Matrix plus(Matrix rhs) throws MatrixException {
-		if (!(this.getLength() == rhs.getLength() && this.getWidth() == rhs.getWidth()))
-			throw new MatrixException("Summands are different sizes.");
+	public Matrix add(Matrix rhs) throws MatrixException {
+		if (this.getLength() != rhs.getLength())
+			throw new MatrixException("Summands have different lengths (" + this.getLength() + " and " + rhs.getLength() + ").");
+		if (this.getWidth() != rhs.getWidth())
+			throw new MatrixException("Summands have different widths (" + this.getWidth() + " and " + rhs.getWidth() + ").");
 
 		Matrix sum = new Matrix(this.getLength(), this.getWidth());
 
@@ -100,9 +114,11 @@ public class Matrix {
 	/**
 	 * Returns the element-wise product of this and rhs
 	 */
-	public Matrix elementwiseTimes(Matrix rhs) throws MatrixException {
-		if (!(this.getLength() == rhs.getLength() && this.getWidth() == rhs.getWidth()))
-			throw new MatrixException("Factors are different sizes.");
+	public Matrix elementwiseMultiply(Matrix rhs) throws MatrixException {
+		if (this.getLength() != rhs.getLength())
+			throw new MatrixException("Factors have different lengths (" + this.getLength() + " and " + rhs.getLength() + ").");
+		if (this.getWidth() != rhs.getWidth())
+			throw new MatrixException("Factors have different widths (" + this.getWidth() + " and " + rhs.getWidth() + ").");
 
 		Matrix prod = new Matrix(this.getLength(), this.getWidth());
 
@@ -112,29 +128,45 @@ public class Matrix {
 
 		return prod;
 	}
+	
+	/**
+	 * Returns the matrix stacked on top of itself rep times
+	 * 
+	 * @throws MatrixException
+	 */
+	public Matrix stack(int rep) throws MatrixException {
+		Matrix result = new Matrix(this.getLength() * rep, this.getWidth());
+
+		for (int i = 0; i < rep; i++)
+			for (int j = 0; j < this.getLength(); j++)
+				for (int k = 0; k < this.getWidth(); k++)
+					result.setElement(i * this.getLength() + j, k, this.getElement(j, k));
+
+		return result;
+	}
 
 	/**
 	 * Returns this + the constant c
 	 * 
 	 * @throws MatrixException
 	 */
-	public Matrix plus(double c) throws MatrixException {
-		return this.plus(new Matrix(c, this));
+	public Matrix add(double c) throws MatrixException {
+		return this.add(new Matrix(c, this));
 	}
 
 	/**
 	 * Returns the product of this and the constant c
 	 */
-	public Matrix times(double c) throws MatrixException {
-		return this.times(new Matrix(c, this));
+	public Matrix multiply(double c) throws MatrixException {
+		return this.elementwiseMultiply(new Matrix(c, this));
 	}
 
 	/**
 	 * Returns the product of this and rhs
 	 */
-	public Matrix times(Matrix rhs) throws MatrixException {
-		if (!(this.getWidth() == rhs.getLength()))
-			throw new MatrixException("Cannot multiply matrices if LHS has different width than RHS's length.");
+	public Matrix multiply(Matrix rhs) throws MatrixException {
+		if (this.getWidth() != rhs.getLength())
+			throw new MatrixException("Cannot multiply matrices if LHS's width is different from RHS's length (" + this.getWidth() + " and " + rhs.getLength() + ").");
 
 		Matrix result = new Matrix(this.getLength(), rhs.getWidth());
 
@@ -180,7 +212,7 @@ public class Matrix {
 	 * Returns the element-wise negation
 	 */
 	public Matrix neg() throws MatrixException {
-		return this.times(-1);
+		return this.multiply(-1);
 	}
 
 	/**
@@ -199,11 +231,37 @@ public class Matrix {
 	 * Returns the transpose
 	 */
 	public Matrix transpose() throws MatrixException {
-		Matrix result = new Matrix(this.getWidth(), this.getLength());
+		Matrix result = new Matrix(this.getLength(), this.getWidth());
 
 		for (int i = 0; i < this.getLength(); i++)
 			for (int j = 0; j < this.getWidth(); j++)
 				result.setElement(j, i, this.getElement(i, j));
+
+		return result;
+	}
+	
+	/**
+	 * Returns sum of all elements
+	 */
+	public double sum() throws MatrixException {
+		double sum = 0;
+		
+		for (int i = 0; i < this.getLength(); i++)
+			for (int j = 0; j < this.getWidth(); j++)
+				sum += this.getElement(i, j);
+
+		return sum;
+	}
+	
+	/**
+	 * Applies a function elementwise
+	 */
+	public Matrix applyElementWise(Operation op) throws MatrixException {
+		Matrix result = new Matrix(this.getLength(), this.getWidth());
+
+		for (int i = 0; i < this.getLength(); i++)
+			for (int j = 0; j < this.getWidth(); j++)
+				result.setElement(i, j, op.apply(this.getElement(i, j)));
 
 		return result;
 	}

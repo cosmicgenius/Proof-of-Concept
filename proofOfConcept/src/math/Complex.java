@@ -113,6 +113,22 @@ public class Complex {
 	public double im() {
 		return im;
 	}
+	
+	/**
+	 * Returns the real part rounded to the nearest integer 
+	 * (Useful for drawing)
+	 */
+	public int x() {
+		return (int) Math.round(re);
+	}
+
+	/**
+	 * Returns the imaginary part rounded to the nearest integer
+	 * (Useful for drawing)
+	 */
+	public int y() {
+		return (int) Math.round(im);
+	}
 
 	/**
 	 * Changes the real part
